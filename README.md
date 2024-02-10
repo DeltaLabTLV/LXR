@@ -7,14 +7,19 @@ LXR is a model-agnostic, post-hoc framework to explain recommender systems. LXR 
 
 ## Repository
 
-This repository contains code for a Learning to eXplain Recommendations (LXR) framework that was evaluated on three publicly available benchmarks, MovieLens1M, a subset of Yahoo!Music dataset and a subset of Pinterest dataset, using two different recommenders, Matrix Factorization (MF) and Variational Auto Encoder (VAE). Hyperparameters optimization was done using optuna.
+This repository contains code for a Learning to eXplain Recommendations (LXR) framework that was evaluated on three publicly available benchmarks, MovieLens1M, a subset of Yahoo!Music dataset and a subset of Pinterest dataset, using two different recommenders, Multi Layer Perceptron (MLP) and Variational Auto Encoder (VAE). Hyperparameters optimization was done using optuna.
 
 ## Folders
 
-* **Data**: contains the raw files for both datasets.
-* **Data_preprocessing**: contains code related to the preprocessing step for preparing data to run with our models.
-* **MF**: contains code related to model evaluation on MF.
-* **VAE**: contains code related to model evaluation on VAE.
+* **preprocessed_data**: contains three subfolders, one for each dataset. In each dataset folder lies the raw data files.
+* **code**: contains several code notebooks:
+  * **baselines**: contains code for LIME and SHAP baselines.
+  - data_processing - code related to the preprocessing step for preparing data to run with our models.
+  - help_functions - includes the framework's functions that are being used in all notebooks.
+  - recommenders_architecture - specifies the architecture of the recommenders that were used in the paper.
+  - recommenders_training - contains code related to VAE and MLP recommenders training.
+  - LXR_training - contains code for training LXR model for explaining a specified recommender.
+  - metrics - contains code related to model evaluation.
 
 ## Requirements
 
@@ -24,9 +29,10 @@ This repository contains code for a Learning to eXplain Recommendations (LXR) fr
 ## Usage
 
 To use this code, follow these steps:
-+ Create data to work with by running the Data_preprocessing notebooks.
-  - Or in order to reproduce results from the paper without running the Data_preprocessing notebooks, please download all files from [here](https://drive.google.com/drive/folders/1wMXgP0x4BRHGMX7fky8C2ohBOBMoRJdk?usp=sharing) from the relevant folder <dataset_name> to Data_preprocessing folder according to the data set you need to run on. 
-+ Run either the MF or VAE notebooks that contain notebooks with these models.
++ Create data to work with by running the data_processing notebooks.
+  - Or in order to reproduce results from the paper without running the data_processing notebook, please download all files from [here](https://drive.google.com/drive/folders/1wMXgP0x4BRHGMX7fky8C2ohBOBMoRJdk?usp=sharing) from the relevant folder <dataset_name> to data_preprocessing folder according to the data set you need to run on. 
++ On every notebook, please specify the "data_name" to be 'ML1M'/'Yahoo'/'Pinterest', and "recommender_name" to be 'MLP'/'VAE'.
++ You can train your oun LXR with the 'LXR_training' notebook, test your results in 'metrics' notebook, 
 
 
 
