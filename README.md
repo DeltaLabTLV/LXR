@@ -11,7 +11,7 @@ This repository contains code for a Learning to eXplain Recommendations (LXR) fr
 
 ## Folders
 
-* **preprocessed_data**: contains three subfolders, one for each dataset. In each dataset folder lies the raw data files.
+* **processed_data**: contains three subfolders, one for each dataset. In each dataset folder lies the raw data files.
 * **code**: contains several code notebooks:
   - data_processing - code related to the preprocessing step for preparing data to run with our models.
   - help_functions - includes the framework's functions that are being used in all notebooks.
