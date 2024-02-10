@@ -13,14 +13,14 @@ This repository contains code for a Learning to eXplain Recommendations (LXR) fr
 
 * **preprocessed_data**: contains three subfolders, one for each dataset. In each dataset folder lies the raw data files.
 * **code**: contains several code notebooks:
-  * **baselines**: contains code for LIME and SHAP baselines.
   - data_processing - code related to the preprocessing step for preparing data to run with our models.
   - help_functions - includes the framework's functions that are being used in all notebooks.
   - recommenders_architecture - specifies the architecture of the recommenders that were used in the paper.
   - recommenders_training - contains code related to VAE and MLP recommenders training.
   - LXR_training - contains code for training LXR model for explaining a specified recommender.
   - metrics - contains code related to model evaluation.
-
+* **baselines**: contains code for LIME and SHAP baselines.
+  
 ## Requirements
 
 * python 3.10
