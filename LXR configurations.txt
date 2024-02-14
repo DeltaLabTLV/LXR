@@ -1,0 +1,213 @@
+This text file describes the configurations that were used to train the LXR's in the paper.
+All hyperparameters were found using Optuna. We used logloss and Tanh activation function in all LXR's.
+The checkpoints are attached as pt. files in the drive. 
+
+***************************************** ML1M ******************************************
+------------------------------------------ MLP ------------------------------------------
+LXR pos:
+Checkpoint path: LXR_ML1M_MLP_9_39_64_14.96898383682846_0.pt
+Hyperparameters: 
+	lambda pos: 14.9689838368284
+	lambda neg: 0
+	alpha: 1
+	learning rate: 0.00276196124099587
+	explainer hidden size: 64
+	batch size: 32
+
+
+LXR neg:
+Checkpoint path: LXR_ML1M_MLP_6_39_64_0_1.671435132593958.pt
+Hyperparameters:
+	lambda pos: 0
+	lambda neg: 1.67143513259395
+	alpha: 1
+	learning rate: 0.001823
+	explainer hidden size: 64
+	batch size: 8
+
+
+LXR combined:
+Checkpoint path: LXR_ML1M_MLP_12_39_64_11.59908096547193_0.1414854294885049.pt
+Hyperparameters: 
+	lambda pos: 11.59908096547193
+	lambda neg: 0.1414854294885049
+	alpha: 1
+	learning rate: 0.004177
+	explainer hidden size: 64
+	batch size: 32
+
+----------------------------------------- VAE ------------------------------------------
+LXR pos:
+Checkpoint path: LXR_ML1M_VAE_4_39_128_6.227314872215377_0.pt
+Hyperparameters: 
+	lambda pos: 6.227314872215377
+	lambda neg: 0
+	alpha: 1
+	learning rate: 0.005344
+	explainer hidden size: 128
+	batch size: 256
+
+
+LXR neg:
+Checkpoint path: LXR_ML1M_VAE_neg2_6_37_128_0_0.8063805490096327.pt
+Hyperparameters:
+	lambda pos: 0
+	lambda neg: 0.8063805490096327
+	alpha: 1
+	learning rate: 0.00248718579945098
+	explainer hidden size: 128
+	batch size: 64
+
+
+LXR combined:
+Checkpoint path: LXR_ML1M_VAE_26_38_128_3.185652725834087_1.420642300151426.pt
+Hyperparameters: 
+	lambda pos: 3.185652725834087
+	lambda neg: 1.420642300151426
+	alpha: 1
+	learning rate: 0.005019
+	explainer hidden size: 128
+	batch size: 128
+
+
+
+***************************************** Yahoo ******************************************
+------------------------------------------ MLP ------------------------------------------
+LXR pos:
+Checkpoint path: LXR_Yahoo_MLP_14_33_128_14.802117370193539_0.pt
+Hyperparameters: 
+	lambda pos: 14.802117370193539
+	lambda neg: 0
+	alpha: 1
+	learning rate: 0.00369442570736201
+	explainer hidden size: 128
+	batch size: 64
+
+
+LXR neg:
+Checkpoint path: LXR_Yahoo_MLP_neg-pos_logloss_L_pos=0_1_17_64_0_4.634364196856106.pt
+Hyperparameters:
+	lambda pos: 0
+	lambda neg: 4.634364196856106
+	alpha: 1
+	learning rate: 0.00313577259913994
+	explainer hidden size: 64
+	batch size: 16
+
+
+LXR combined:
+Checkpoint path: LXR_Yahoo_MLP_neg-pos_combined_last_29_37_128_12.40692505393434_0.19367009952856118.pt
+Hyperparameters: 
+	lambda pos: 12.40692505393434
+	lambda neg: 0.19367009952856118
+	alpha: 1
+	learning rate: 0.0021434530854132
+	explainer hidden size: 128
+	batch size: 64
+
+
+----------------------------------------- VAE ------------------------------------------
+LXR pos:
+Checkpoint path: LXR_Yahoo_VAE_neg-1.5pos_18_17_64_17.225602659099284_0.pt
+Hyperparameters: 
+	lambda pos: 17.225602659099284
+	lambda neg: 0
+	alpha: 1
+	learning rate: 0.0022989149911625
+	explainer hidden size: 64
+	batch size: 32
+
+
+LXR neg:
+Checkpoint path: LXR_Yahoo_VAE_neg-pos_logloss_L_pos=0_21_11_64_0_12.131715982096686.pt
+Hyperparameters:
+	lambda pos: 0
+	lambda neg: 12.131715982096686
+	alpha: 1
+	learning rate: 0.00604571087251916
+	explainer hidden size: 64
+	batch size: 32
+
+
+LXR combined:
+Checkpoint path: LXR_Yahoo_VAE_neg-1.5pos_combined_22_11_128_18.931291350177588_4.419255736745236.pt
+Hyperparameters: 
+	lambda pos: 18.931291350177588
+	lambda neg: 4.419255736745236
+	alpha: 1
+	learning rate: 0.0022989149911625
+	explainer hidden size: 128
+	batch size: 16
+
+
+
+***************************************** Pinterest ******************************************
+-------------------------------------------- MLP ---------------------------------------------
+LXR pos:
+Checkpoint path: LXR_Pinterest_MLP_pos_11_37_64_6.982964222882332_0.pt
+Hyperparameters: 
+	lambda pos: 6.982964222882332
+	lambda neg: 0
+	alpha: 1
+	learning rate: 0.00558414859582765
+	explainer hidden size: 64
+	batch size: 64
+
+
+LXR neg:
+Checkpoint path: LXR_Pinterest_MLP_neg_2_29_32_0_3.9373082876774363.pt
+Hyperparameters:
+	lambda pos: 0
+	lambda neg: 3.9373082876774363
+	alpha: 1
+	learning rate: 0.00296479232794653
+	explainer hidden size: 32
+	batch size: 16
+
+
+LXR combined:
+Checkpoint path: LXR_Pinterest_MLP_0_5_16_10.059416809308486_0.705778173474644.pt
+Hyperparameters: 
+	lambda pos: 10.059416809308486
+	lambda neg: 0.705778173474644
+	alpha: 1
+	learning rate: 0.008547
+	explainer hidden size: 16
+	batch size: 16
+
+
+----------------------------------------- VAE ------------------------------------------
+LXR pos:
+Checkpoint path: LXR_Pinterest_VAE_pos_12_39_32_10.417362487817448_0.pt
+Hyperparameters: 
+	lambda pos: 10.417362487817448
+	lambda neg: 0
+	alpha: 1
+	learning rate: 0.0227763680079788
+	explainer hidden size: 32
+	batch size: 256
+
+
+LXR neg:
+Checkpoint path: 
+Hyperparameters:
+	lambda pos: 0
+	lambda neg: 
+	alpha: 1
+	learning rate: 
+	explainer hidden size: 
+	batch size: 
+
+
+LXR combined:
+Checkpoint path: LXR_Pinterest_VAE_comb_4_27_32_6.3443735346179855_1.472868807603448.pt
+Hyperparameters: 
+	lambda pos: 6.3443735346179855
+	lambda neg: 1.472868807603448
+	alpha: 1
+	learning rate: 0.0420483968289197
+	explainer hidden size: 32
+	batch size: 256
+
+
+
