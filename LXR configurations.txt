@@ -189,7 +189,7 @@ Hyperparameters:
 
 
 LXR neg:
-Checkpoint path: 
+Checkpoint path: LXR_Pinterest_VAE_neg_4_39_32_0_1.670636083128788.pt
 Hyperparameters:
 	lambda pos: 0
 	lambda neg: 1.67063608312878
