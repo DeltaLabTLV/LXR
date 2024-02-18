@@ -192,11 +192,11 @@ LXR neg:
 Checkpoint path: 
 Hyperparameters:
 	lambda pos: 0
-	lambda neg: 
+	lambda neg: 1.67063608312878
 	alpha: 1
-	learning rate: 
-	explainer hidden size: 
-	batch size: 
+	learning rate: 0.00276666415723207
+	explainer hidden size: 32
+	batch size: 128
 
 
 LXR combined:
