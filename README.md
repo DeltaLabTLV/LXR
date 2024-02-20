@@ -20,7 +20,7 @@ This repository contains code for a Learning to eXplain Recommendations (LXR) fr
   - LXR_training - contains code for training LXR model for explaining a specified recommender.
   - metrics - contains code related to model evaluation.
 * **baselines**: contains code for LIME and SHAP baselines.
-* **checkpoints**: presently, this folder is empty. It is the designated location for saving and loading the trained model's checkpoints. The checkpoints developed during our project are stored in the 'checkpoints' folder on the [drive]([url](https://drive.google.com/drive/u/3/folders/1nD0_5asi4B9dyUN_JYoYT5QJPYeAMWCD)).
+* **checkpoints**: presently, this folder is empty. It is the designated location for saving and loading the trained model's checkpoints. The checkpoints developed during our project are stored in the 'checkpoints' folder on the [drive](https://drive.google.com/drive/u/3/folders/1nD0_5asi4B9dyUN_JYoYT5QJPYeAMWCD).
   
 ## Requirements
 
