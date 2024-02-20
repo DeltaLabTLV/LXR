@@ -25,12 +25,14 @@ This repository contains code for a Learning to eXplain Recommendations (LXR) fr
 
 * python 3.10
 * Pytorch 1.13
+* wandb 0.16.3 (the package we used for monitoring the train process)
+* 
 
 ## Usage
 
 To use this code, follow these steps:
 + Create data to work with by running the data_processing notebooks.
-  - Or in order to reproduce results from the paper without running the data_processing notebook, please download all files from [here](https://drive.google.com/drive/folders/1wMXgP0x4BRHGMX7fky8C2ohBOBMoRJdk?usp=sharing) from the relevant folder <dataset_name> to data_preprocessing folder according to the data set you need to run on. 
+  - Or in order to reproduce results from the paper without running the data_processing notebook, please download all files from [here](https://drive.google.com/drive/folders/1nD0_5asi4B9dyUN_JYoYT5QJPYeAMWCD?usp=sharing) from the relevant folder <dataset_name> to data_preprocessing folder according to the data set you need to run on. 
 + On every notebook, please specify the "data_name" variable to be 'ML1M'/'Yahoo'/'Pinterest', and the "recommender_name" variable to be 'MLP'/'VAE'.
 + You can train your oun LXR with the 'LXR_training' notebook, test your results in 'metrics' notebook, and test new explanation methods using 'metrics' notebook. 
 
