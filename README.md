@@ -2,6 +2,8 @@
 
 LXR is a model-agnostic, post-hoc framework to explain recommender systems. LXR can work with any differentiable recommender and learns to score the importance of users' personal data with respect to a recommended item. The framework's objective employs a novel self-supervised counterfactual loss function that aims to identify the user data that best explains the item's recommendation. Additionally, we propose several counterfactual evaluation metrics for assessing explanations in recommender systems. Using these metrics, our results demonstrate LXR's capability to provide counterfactual explanations for various recommendation algorithms across different datasets.
 
+For additional information, please refer to the paper available at this [link](https://dl.acm.org/doi/abs/10.1145/3589334.3645560).
+
 ## A general overview 
 ![LXR_diagram](https://github.com/DeltaLabTLV/LXR/blob/main/LXR_diagram.png)
 
