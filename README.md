@@ -38,5 +38,25 @@ To use this code, follow these steps:
 + On every notebook, please specify the "data_name" variable to be 'ML1M'/'Yahoo'/'Pinterest', and the "recommender_name" variable to be 'MLP'/'VAE'.
 + You can train your oun LXR with the 'LXR_training' notebook, test your results in 'metrics' notebook, and test new explanation methods using 'metrics' notebook. 
 
+## Citation
 
+Please cite both of the following papers if you use this repository in your work.
+Proper citation helps support our research and acknowledges the effort behind this project.
+
+```
+@inproceedings{barkan2024counterfactual,
+  title={A counterfactual framework for learning and evaluating explanations for recommender systems},
+  author={Barkan, Oren and Bogina, Veronika and Gurevitch, Liya and Asher, Yuval and Koenigstein, Noam},
+  booktitle={Proceedings of the ACM Web Conference 2024},
+  pages={3723--3733},
+  year={2024}
+}
+
+@article{gurevitchlxr,
+  title={LXR: Learning to eXplain Recommendations},
+  author={Gurevitch, Liya and Bogina, Veronika and Barkan, Oren and Schein, Yahlly and Elisha, Yehonatan and Koenigstein, Noam},
+  journal={ACM Transactions on Recommender Systems},
+  publisher={ACM New York, NY}
+}
+```
 
