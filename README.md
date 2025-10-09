@@ -40,7 +40,7 @@ To use this code, follow these steps:
 
 ## Citation
 
-Please cite both of the following papers if you use this repository in your work.
+Please cite both of the following papers if you use this repository in your work.  
 Proper citation helps support our research and acknowledges the effort behind this project.
 
 ```
